@@ -1,0 +1,10 @@
+2.003004
+perl(Class::Method::Modifiers)
+perl(Devel::GlobalDestruction)
+perl(Module::Runtime)
+perl(Role::Tiny)
+perl(Sub::Defer)
+perl(Sub::Exporter::Progressive)
+perl(Sub::Quote)
+perl(Test::Fatal)
+perl(Try::Tiny)
