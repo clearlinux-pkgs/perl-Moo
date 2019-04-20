@@ -73,21 +73,21 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.1/Method/Generate/Accessor.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Method/Generate/BuildAll.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Method/Generate/Constructor.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Method/Generate/DemolishAll.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Moo.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Moo/HandleMoose.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Moo/HandleMoose/FakeMetaClass.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Moo/HandleMoose/_TypeMap.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Moo/Object.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Moo/Role.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Moo/_Utils.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Moo/_mro.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Moo/_strictures.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Moo/sification.pm
-/usr/lib/perl5/vendor_perl/5.28.1/oo.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Method/Generate/Accessor.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Method/Generate/BuildAll.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Method/Generate/Constructor.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Method/Generate/DemolishAll.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Moo.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Moo/HandleMoose.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Moo/HandleMoose/FakeMetaClass.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Moo/HandleMoose/_TypeMap.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Moo/Object.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Moo/Role.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Moo/_Utils.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Moo/_mro.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Moo/_strictures.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Moo/sification.pm
+/usr/lib/perl5/vendor_perl/5.28.2/oo.pm
 
 %files dev
 %defattr(-,root,root,-)
