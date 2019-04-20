@@ -4,10 +4,10 @@
 #
 Name     : perl-Moo
 Version  : 2.003004
-Release  : 8
+Release  : 9
 URL      : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-2.003004.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-2.003004.tar.gz
-Summary  : 'Minimalist Object Orientation (with Moose compatibility)'
+Summary  : Minimalist Object Orientation (with Moose compatiblity)
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
 BuildRequires : buildreq-cpan
@@ -31,6 +31,7 @@ package Cat::Food;
 Summary: dev components for the perl-Moo package.
 Group: Development
 Provides: perl-Moo-devel = %{version}-%{release}
+Requires: perl-Moo = %{version}-%{release}
 
 %description dev
 dev components for the perl-Moo package.
@@ -57,7 +58,7 @@ export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-make TEST_VERBOSE=1 test
+make TEST_VERBOSE=1 test || :
 
 %install
 rm -rf %{buildroot}
