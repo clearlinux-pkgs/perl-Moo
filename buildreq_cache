@@ -1,4 +1,4 @@
-2.003004
+2.003006
 perl(Class::Method::Modifiers)
 perl(Devel::GlobalDestruction)
 perl(Module::Runtime)
@@ -8,3 +8,4 @@ perl(Sub::Exporter::Progressive)
 perl(Sub::Quote)
 perl(Test::Fatal)
 perl(Try::Tiny)
+util-linux
