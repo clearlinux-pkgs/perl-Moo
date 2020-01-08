@@ -4,18 +4,21 @@
 #
 Name     : perl-Moo
 Version  : 2.003006
-Release  : 10
+Release  : 11
 URL      : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-2.003006.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-2.003006.tar.gz
-Summary  : Minimalist Object Orientation (with Moose compatiblity)
+Summary  : 'Minimalist Object Orientation (with Moose compatibility)'
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
 Requires: perl-Moo-license = %{version}-%{release}
+Requires: perl-Moo-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 BuildRequires : perl(Class::Method::Modifiers)
+BuildRequires : perl(Devel::GlobalDestruction)
 BuildRequires : perl(Module::Runtime)
 BuildRequires : perl(Role::Tiny)
 BuildRequires : perl(Sub::Defer)
+BuildRequires : perl(Sub::Exporter::Progressive)
 BuildRequires : perl(Sub::Quote)
 BuildRequires : perl(Test::Fatal)
 BuildRequires : perl(Try::Tiny)
@@ -32,7 +35,6 @@ Summary: dev components for the perl-Moo package.
 Group: Development
 Provides: perl-Moo-devel = %{version}-%{release}
 Requires: perl-Moo = %{version}-%{release}
-Requires: perl-Moo = %{version}-%{release}
 
 %description dev
 dev components for the perl-Moo package.
@@ -46,8 +48,18 @@ Group: Default
 license components for the perl-Moo package.
 
 
+%package perl
+Summary: perl components for the perl-Moo package.
+Group: Default
+Requires: perl-Moo = %{version}-%{release}
+
+%description perl
+perl components for the perl-Moo package.
+
+
 %prep
 %setup -q -n Moo-2.003006
+cd %{_builddir}/Moo-2.003006
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -85,21 +97,6 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/Method/Generate/Accessor.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Method/Generate/BuildAll.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Method/Generate/Constructor.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Method/Generate/DemolishAll.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Moo.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Moo/HandleMoose.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Moo/HandleMoose/FakeMetaClass.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Moo/HandleMoose/_TypeMap.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Moo/Object.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Moo/Role.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Moo/_Utils.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Moo/_mro.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Moo/_strictures.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Moo/sification.pm
-/usr/lib/perl5/vendor_perl/5.28.2/oo.pm
 
 %files dev
 %defattr(-,root,root,-)
@@ -110,3 +107,21 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %files license
 %defattr(0644,root,root,0755)
 /usr/share/package-licenses/perl-Moo/9ef6cb6bf8daa686a87a0d40ac8adcc38ff0a71c
+
+%files perl
+%defattr(-,root,root,-)
+/usr/lib/perl5/vendor_perl/5.30.1/Method/Generate/Accessor.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Method/Generate/BuildAll.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Method/Generate/Constructor.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Method/Generate/DemolishAll.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Moo.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Moo/HandleMoose.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Moo/HandleMoose/FakeMetaClass.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Moo/HandleMoose/_TypeMap.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Moo/Object.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Moo/Role.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Moo/_Utils.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Moo/_mro.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Moo/_strictures.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Moo/sification.pm
+/usr/lib/perl5/vendor_perl/5.30.1/oo.pm
