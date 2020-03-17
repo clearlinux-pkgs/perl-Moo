@@ -4,7 +4,7 @@
 #
 Name     : perl-Moo
 Version  : 2.003006
-Release  : 11
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-2.003006.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-2.003006.tar.gz
 Summary  : 'Minimalist Object Orientation (with Moose compatibility)'
@@ -110,18 +110,18 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/Method/Generate/Accessor.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Method/Generate/BuildAll.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Method/Generate/Constructor.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Method/Generate/DemolishAll.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Moo.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Moo/HandleMoose.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Moo/HandleMoose/FakeMetaClass.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Moo/HandleMoose/_TypeMap.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Moo/Object.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Moo/Role.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Moo/_Utils.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Moo/_mro.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Moo/_strictures.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Moo/sification.pm
-/usr/lib/perl5/vendor_perl/5.30.1/oo.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Method/Generate/Accessor.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Method/Generate/BuildAll.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Method/Generate/Constructor.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Method/Generate/DemolishAll.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Moo.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Moo/HandleMoose.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Moo/HandleMoose/FakeMetaClass.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Moo/HandleMoose/_TypeMap.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Moo/Object.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Moo/Role.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Moo/_Utils.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Moo/_mro.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Moo/_strictures.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Moo/sification.pm
+/usr/lib/perl5/vendor_perl/5.30.2/oo.pm
