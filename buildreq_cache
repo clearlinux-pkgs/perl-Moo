@@ -1,6 +1,5 @@
-2.004000
+2.004002
 perl(Class::Method::Modifiers)
-perl(Module::Runtime)
 perl(Role::Tiny)
 perl(Sub::Defer)
 perl(Sub::Quote)
