@@ -4,7 +4,7 @@
 #
 Name     : perl-Moo
 Version  : 2.005004
-Release  : 26
+Release  : 27
 URL      : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-2.005004.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-2.005004.tar.gz
 Summary  : 'Minimalist Object Orientation (with Moose compatibility)'
@@ -106,16 +106,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.34.0/Method/Generate/Accessor.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Method/Generate/BuildAll.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Method/Generate/Constructor.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Method/Generate/DemolishAll.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Moo.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Moo/HandleMoose.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Moo/HandleMoose/FakeMetaClass.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Moo/HandleMoose/_TypeMap.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Moo/Object.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Moo/Role.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Moo/_Utils.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Moo/sification.pm
-/usr/lib/perl5/vendor_perl/5.34.0/oo.pm
+/usr/lib/perl5/*
