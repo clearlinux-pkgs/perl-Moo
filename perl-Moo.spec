@@ -4,7 +4,7 @@
 #
 Name     : perl-Moo
 Version  : 2.005005
-Release  : 29
+Release  : 30
 URL      : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-2.005005.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-2.005005.tar.gz
 Summary  : 'Minimalist Object Orientation (with Moose compatibility)'
